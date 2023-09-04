@@ -47,7 +47,7 @@ const Sidebar = () => {
                 <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div className="bg-white py-2 collapse-inner rounded">
                         <h6 className="collapse-header">Custom Components:</h6>
-                        <NavLink className="collapse-item" to="#">Buttons</NavLink>
+                        <NavLink className="collapse-item" to="/buttons">Buttons</NavLink>
                         <NavLink className="collapse-item" to="#">Cards</NavLink>
                     </div>
                 </div>

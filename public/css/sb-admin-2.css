@@ -37,7 +37,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -60,7 +60,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2253,6 +2253,81 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+/* Cambiar el nombre de la clase y el color del botón .btn-aqua a #00A99D */
+.btn-aqua {
+  color: #fff;
+  background-color: #00A99D;
+  border-color: #00A99D;
+}
+
+/* Cambiar el color de fondo cuando se pasa el cursor sobre el botón */
+.btn-aqua:hover {
+  background-color: #005d55;
+  border-color: #005d55;
+}
+
+/* Cambiar el efecto de enfoque del botón */
+.btn-aqua:focus, .btn-aqua.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 169, 157, 0.5);
+}
+
+/* Cambiar el color cuando el botón está desactivado */
+.btn-aqua.disabled, .btn-aqua:disabled {
+  background-color: #65bfb9;
+  border-color: #65bfb9;
+}
+
+/* Cambiar el color de fondo cuando se hace clic en el botón */
+.btn-aqua:not(:disabled):not(.disabled):active, .btn-aqua:not(:disabled):not(.disabled).active,
+.show > .btn-aqua.dropdown-toggle {
+  background-color: #004c45;
+  border-color: #004640;
+}
+
+/* Cambiar el efecto de enfoque cuando se hace clic en el botón */
+.btn-aqua:not(:disabled):not(.disabled):active:focus, .btn-aqua:not(:disabled):not(.disabled).active:focus,
+.show > .btn-aqua.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 169, 157, 0.5);
+}
+
+/* Estilos para el botón .btn-orange con color HEX #F7931E */
+.btn-orange {
+  color: #fff;
+  background-color: #F7931E;
+  border-color: #F7931E;
+}
+
+.btn-orange:hover {
+  background-color: #D87F00;
+  border-color: #D87F00;
+}
+
+.btn-orange:focus,
+.btn-orange.focus {
+  box-shadow: 0 0 0 0.2rem rgba(247, 147, 30, 0.5);
+}
+
+.btn-orange.disabled,
+.btn-orange:disabled {
+  background-color: #F7B766;
+  border-color: #F7B766;
+}
+
+.btn-orange:not(:disabled):not(.disabled):active,
+.btn-orange:not(:disabled):not(.disabled).active,
+.show > .btn-orange.dropdown-toggle {
+  background-color: #D66D00;
+  border-color: #D66D00;
+}
+
+.btn-orange:not(:disabled):not(.disabled):active:focus,
+.btn-orange:not(:disabled):not(.disabled).active:focus,
+.show > .btn-orange.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(247, 147, 30, 0.5);
+}
+
+
+
 .btn-primary {
   color: #fff;
   background-color: #4e73df;
@@ -2524,6 +2599,81 @@ fieldset:disabled a.btn {
 .show > .btn-dark.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(115, 116, 128, 0.5);
 }
+
+/* Estilos para el botón .btn-outline-aqua con color HEX #00A99D */
+.btn-outline-aqua {
+  color: #00A99D;
+  border-color: #00A99D;
+}
+
+.btn-outline-aqua:hover {
+  color: #fff;
+  background-color: #00A99D;
+  border-color: #00A99D;
+}
+
+.btn-outline-aqua:focus,
+.btn-outline-aqua.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 169, 157, 0.5);
+}
+
+.btn-outline-aqua.disabled,
+.btn-outline-aqua:disabled {
+  color: #00A99D;
+  background-color: transparent;
+}
+
+.btn-outline-aqua:not(:disabled):not(.disabled):active,
+.btn-outline-aqua:not(:disabled):not(.disabled).active,
+.show > .btn-outline-aqua.dropdown-toggle {
+  color: #fff;
+  background-color: #00A99D;
+  border-color: #00A99D;
+}
+
+.btn-outline-aqua:not(:disabled):not(.disabled):active:focus,
+.btn-outline-aqua:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-aqua.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 169, 157, 0.5);
+}
+
+/* Estilos para el botón .btn-outline-orange con color HEX #F7931E */
+.btn-outline-orange {
+  color: #F7931E;
+  border-color: #F7931E;
+}
+
+.btn-outline-orange:hover {
+  color: #fff;
+  background-color: #F7931E;
+  border-color: #F7931E;
+}
+
+.btn-outline-orange:focus,
+.btn-outline-orange.focus {
+  box-shadow: 0 0 0 0.2rem rgba(247, 147, 30, 0.5);
+}
+
+.btn-outline-orange.disabled,
+.btn-outline-orange:disabled {
+  color: #F7931E;
+  background-color: transparent;
+}
+
+.btn-outline-orange:not(:disabled):not(.disabled):active,
+.btn-outline-orange:not(:disabled):not(.disabled).active,
+.show > .btn-outline-orange.dropdown-toggle {
+  color: #fff;
+  background-color: #F7931E;
+  border-color: #F7931E;
+}
+
+.btn-outline-orange:not(:disabled):not(.disabled):active:focus,
+.btn-outline-orange:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-orange.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(247, 147, 30, 0.5);
+}
+
 
 .btn-outline-primary {
   color: #4e73df;
@@ -5658,7 +5808,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5771,7 +5921,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;

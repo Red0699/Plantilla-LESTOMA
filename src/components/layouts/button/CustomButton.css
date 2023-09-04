@@ -1,0 +1,15 @@
+#custom-button {
+    background-color: #00A99D;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#custom-button:hover {
+    background-color: #005d55;
+}
+
+#custom-button:disabled {
+    background-color: #65bfb9;
+    cursor: not-allowed;
+}
