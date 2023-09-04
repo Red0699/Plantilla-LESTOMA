@@ -4,11 +4,23 @@ import App from './App.js'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './index.css'
 
+//Pages
+import Dashboard from './components/pages/Ejemplos/Dashboard/Dashboard.js'
+
 ReactDOM.createRoot(document.getElementById('wrapper')).render(
 
   <BrowserRouter>
     <Routes>
-      <Route path='/' element={<App />} />
+
+      {/*Permite anidar rutas en base a una*/}
+      <Route path='/' element={<App />}>
+
+        {/*Rutas */}
+        <Route index element={<Dashboard />} />
+        <Route path='home' element={<Dashboard />} />
+
+      </Route>
+
     </Routes>
   </BrowserRouter>
 

@@ -11,79 +11,108 @@ const Sidebar = () => {
 
         <ul className="sd-settings navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
-            <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/home">
-                <div className="sidebar-brand-icon">
-                    <i className="fas fa-desktop"></i>
-                </div>
-                <div className="sidebar-brand-text mx-3">LOGO UDEC</div>
+            <Link className="sidenav-header d-flex align-items-center justify-content-center" to="/home">
+                <a className=" navbar-brand" href="javascript:void(0)">
+                    <img src="/img/Logo2_UDEC.png" alt="Logo" style={{ width: '350px', height: '120px' }} className='navbar-brand-img' />
+                </a>
             </Link>
+
+
 
 
             <hr className="sidebar-divider my-0 " />
 
 
-            <li className="nav-item">
+            <li className="nav-item active">
                 <NavLink to="/home" className="nav-link" >
-                    <i className="fas fa-fw fa-house-user"></i>
-                    <span>Inicio</span>
+                    <i className="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
                 </NavLink>
             </li>
 
+            {/* Divider */}
             <hr className="sidebar-divider" />
 
+            {/* Heading */}
+            <div className="sidebar-heading">
+                Interface
+            </div>
 
+            {/*Nav Item - Pages Collapse Menu */}
             <li className="nav-item">
-                <NavLink to="/usuario" className="nav-link" >
-                    <i className="fas fa-fw fa-users"></i>
-                    <span>Usuarios</span>
+                <NavLink className="nav-link collapsed" to="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i className="fas fa-fw fa-cog"></i>
+                    <span>Componentes</span>
+                </NavLink>
+                <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div className="bg-white py-2 collapse-inner rounded">
+                        <h6 className="collapse-header">Custom Components:</h6>
+                        <NavLink className="collapse-item" to="#">Buttons</NavLink>
+                        <NavLink className="collapse-item" to="#">Cards</NavLink>
+                    </div>
+                </div>
+            </li>
+
+            {/* Nav Item - Tables */}
+            <li className="nav-item">
+                <a className="nav-link" href="#">
+                    <i className="fas fa-fw fa-wrench"></i>
+                    <span>Utilidades</span>
+                </a>
+            </li>
+
+            {/* Divider */}
+            <hr className="sidebar-divider" />
+
+            {/* Heading */}
+            <div className="sidebar-heading">
+                Addons
+            </div>
+
+            {/* Nav Item - Páginas Collapse Menu */}
+            <li className="nav-item">
+                <NavLink className="nav-link collapsed" to="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+                    <i className="fas fa-fw fa-folder"></i>
+                    <span>Páginas</span>
+                </NavLink>
+                <div id="collapsePages" className="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div className="bg-white py-2 collapse-inner rounded">
+                        <h6 className="collapse-header">Login Screens:</h6>
+                        <NavLink className="collapse-item" to="#">Login</NavLink>
+                        <NavLink className="collapse-item" to="#">Register</NavLink>
+                        <NavLink className="collapse-item" to="#">Forgot Password</NavLink>
+                        <div className="collapse-divider"></div>
+                        <h6 className="collapse-header">Other Pages:</h6>
+                        <NavLink className="collapse-item" to="#">404 Page</NavLink>
+                    </div>
+                </div>
+            </li>
+
+            {/* Nav Item - Charts */}
+            <li className="nav-item">
+                <NavLink className="nav-link" to="#">
+                    <i className="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span>
                 </NavLink>
             </li>
 
-
-
-
+            {/* Nav Item - Tables */}
             <li className="nav-item">
-                <NavLink to="/proveedor" className="nav-link" >
-                    <i className="fas fa-fw fa-briefcase"></i>
-                    <span>Proveedores</span>
-                </NavLink>
+                <a className="nav-link" href="tables.html">
+                    <i className="fas fa-fw fa-table"></i>
+                    <span>Tables</span>
+                </a>
             </li>
 
-
-
-            <li className="nav-item">
-                <NavLink to="/cliente" className="nav-link" >
-                    <i className="fas fa-fw fa-user-alt"></i>
-                    <span>Clientes</span>
-                </NavLink>
-            </li>
-
-
-            <li className="nav-item">
-                <NavLink to="/producto" className="nav-link" >
-                    <i className="fas fa-fw fa-user-check"></i>
-                    <span>Productos</span>
-                </NavLink>
-            </li>
-
-            <li className="nav-item">
-                <NavLink to="/entrada" className="nav-link" >
-                    <i className="fas fa-box"></i>
-                    <span>Entradas</span>
-                </NavLink>
-            </li>
-
-            <li className="nav-item">
-                <NavLink to="/salida" className="nav-link" >
-                    <i className="fas fa-wallet"></i>
-                    <span>Salidas</span>
-                </NavLink>
-            </li>
 
             <hr className="sidebar-divider d-none d-md-block" />
 
-            
+            {/*Sidebar Toggler (Sidebar) 
+            <div className="text-center d-none d-md-inline">
+                <button className="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
 
+            */}
         </ul>
     )
 }
