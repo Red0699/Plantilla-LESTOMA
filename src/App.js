@@ -9,7 +9,7 @@ function App() {
     <>
       <Sidebar/>
 
-      <div id="content-wrapper" className="d-flex flex-column">
+      <div id="content-wrapper" className="">
 
         <div id='content'>
 
@@ -21,7 +21,9 @@ function App() {
 
 
           <div className="container-fluid">
+          
             <Outlet />
+            
           </div>
 
         </div>

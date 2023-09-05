@@ -9,7 +9,9 @@ const Sidebar = () => {
 
     return (
 
-        <nav className="sd-settings navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+        <nav className="sd-settings navbar-nav sidebar sidebar-dark navbar-expand-xs fixed-left" id="accordionSidebar">
+
+        <div>
 
             <Link className="sidenav-header d-flex align-items-center justify-content-center" to="/home">
                 <a className=" navbar-brand" href="javascript:void(0)">
@@ -110,6 +112,8 @@ const Sidebar = () => {
             </div>
 
             */}
+
+            </div>
         </nav>
     )
 }

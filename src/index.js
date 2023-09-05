@@ -17,7 +17,6 @@ ReactDOM.createRoot(document.getElementById('wrapper')).render(
 
       <Route index path='/login' element={<Login />} />
       <Route path='/registro' element={<Registro />} />
-      
       {/*Permite anidar rutas en base a una*/}
       <Route path='/' element={<App />}>
 
