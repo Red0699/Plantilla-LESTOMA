@@ -9,16 +9,13 @@ const Sidebar = () => {
 
     return (
 
-        <ul className="sd-settings navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+        <nav className="sd-settings navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <Link className="sidenav-header d-flex align-items-center justify-content-center" to="/home">
                 <a className=" navbar-brand" href="javascript:void(0)">
                     <img src="/img/Logo2_UDEC.png" alt="Logo" style={{ width: '350px', height: '120px' }} className='navbar-brand-img' />
                 </a>
             </Link>
-
-
-
 
             <hr className="sidebar-divider my-0 " />
 
@@ -78,8 +75,8 @@ const Sidebar = () => {
                 <div id="collapsePages" className="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div className="bg-white py-2 collapse-inner rounded">
                         <h6 className="collapse-header">Login Screens:</h6>
-                        <NavLink className="collapse-item" to="#">Login</NavLink>
-                        <NavLink className="collapse-item" to="#">Register</NavLink>
+                        <NavLink className="collapse-item" to="/login">Login</NavLink>
+                        <NavLink className="collapse-item" to="/registro">Registro</NavLink>
                         <NavLink className="collapse-item" to="#">Forgot Password</NavLink>
                         <div className="collapse-divider"></div>
                         <h6 className="collapse-header">Other Pages:</h6>
@@ -113,7 +110,7 @@ const Sidebar = () => {
             </div>
 
             */}
-        </ul>
+        </nav>
     )
 }
 
