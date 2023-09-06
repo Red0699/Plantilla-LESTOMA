@@ -47,7 +47,7 @@ const Sidebar = () => {
                     <div className="bg-white py-2 collapse-inner rounded">
                         <h6 className="collapse-header">Custom Components:</h6>
                         <NavLink className="collapse-item" to="/buttons">Buttons</NavLink>
-                        <NavLink className="collapse-item" to="#">Cards</NavLink>
+                        <NavLink className="collapse-item" to="/card">Cards</NavLink>
                     </div>
                 </div>
             </li>
@@ -97,10 +97,10 @@ const Sidebar = () => {
 
             {/* Nav Item - Tables */}
             <li className="nav-item">
-                <a className="nav-link" href="tables.html">
+                <NavLink className="nav-link" to="/table">
                     <i className="fas fa-fw fa-table"></i>
                     <span>Tables</span>
-                </a>
+                </NavLink>
             </li>
 
 

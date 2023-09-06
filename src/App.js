@@ -2,6 +2,8 @@ import { Navigate, Outlet } from 'react-router-dom'
 import React, { useContext } from 'react'
 import Sidebar from './components/layouts/navbars/Sidebar';
 import Navbar from './components/layouts/navbars/Navbar';
+import Footer from './components/layouts/footer/Footer';
+import Logout from './components/layouts/modals/Logout';
 
 function App() {
 
@@ -26,11 +28,15 @@ function App() {
             
           </div>
 
+          <Footer/>
+
         </div>
 
 
 
       </div>
+
+      <Logout/>
     </>
   )
 

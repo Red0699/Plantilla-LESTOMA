@@ -289,6 +289,22 @@ const Dashboard = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="col-lg-6 mb-4">
+                            <div className="card bg-aqua text-white shadow">
+                                <div className="card-body">
+                                    Aqua
+                                    <div className="text-white-50 small">HEX # 00A99D</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 mb-4">
+                            <div className="card bg-orange text-white shadow">
+                                <div className="card-body">
+                                    Orange
+                                    <div className="text-white-50 small">HEX # F7931E</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>

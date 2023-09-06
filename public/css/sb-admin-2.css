@@ -6973,6 +6973,28 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 
+.bg-aqua {
+  background-color: #00a99d !important;
+}
+
+a.bg-aqua:hover,
+a.bg-aqua:focus,
+button.bg-aqua:hover,
+button.bg-aqua:focus {
+  background-color: #005d55 !important;
+}
+
+.bg-orange {
+  background-color: #f7931e !important;
+}
+
+a.bg-orange:hover,
+a.bg-orange:focus,
+button.bg-orange:hover,
+button.bg-orange:focus {
+  background-color: #d87816 !important;
+}
+
 .bg-primary {
   background-color: #4e73df !important;
 }
